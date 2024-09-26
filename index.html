@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div class="container">
@@ -16,9 +18,10 @@
           <input type="text" name="username" required>
           <label>Username</label>
         </div>
-        <div class="input-box">
-          <input type="password" name="password" required>
+        <div class="input-box password-box">
+          <input type="password" name="password" id="password" required>
           <label>Password</label>
+          <span class="eye-icon" id="toggle-password">&#128065;</span> <!-- Eye icon for password toggle -->
         </div>
         <button type="submit" class="btn">Login</button>
         <p>Don't have an account? <a href="#">Sign Up</a></p>
